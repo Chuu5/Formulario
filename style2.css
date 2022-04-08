@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+}
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+body {
+  display: flex;
+  color: var(--text-base);
+  font-family: 'Poppins', Arial;
+}
+
+h2, h3 {
+  color: var(--text-title);
+}
+
+img {
+  width: auto;
+  height: auto;
+  padding-right: 5px;
+}
+
+header {
+  display: flex;
+  margin: 30px;
+  width: 100%;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-left: 30px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--form-background);
+  max-width: 572px;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  max-width: 335px;
+  width: 100%;
+  margin: 13px;
+}
+
+input {
+  padding: 7px;
+  background-color: var(--form-background);
+  border: 1px solid #959ba5;
+  border-radius: 10px;
+  color: var(--text-base);
+}
+
+input:focus {
+  border: 2px solid var(--primary-color);
+  outline: none;
+}
+
+input[type=checkbox] {
+  margin-top: 4px;
+}
+
+input[type=submit] {
+  background-color: var(--primary-color);
+  color: #181716;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+}
+
+.checkbox {
+  display: flex;
+  gap: .7rem;
+  max-width: 335px;
+  width: 100%;
+  margin: 10px;
+}
+
+.left-side, .right-side {
+  height: 100vh;
+  width: 100%;
+}
+
+.right-side {
+  background-image: url(pexels-pixabay-414630.jpg);
+  background-position: center right;
+  background-size: cover;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background);
+}
+
+@media (max-width: 768px) {
+  .right-side {
+    display: none;
+  }
+ 
+  .left-side {
+    width: 100%;
+  }
+
+
+  form legend {
+    font-size: 20px;
+  }
+  label, input {
+    font-size: 19px;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  
+
+  .left-side form {
+    background-color: var(--background);
+  }
+}

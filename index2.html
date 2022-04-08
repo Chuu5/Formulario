@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="left-side">
+    <header>
+      <img src="images/logo.svg" alt="">
+      <h3>Chuu.in</h3>
+    </header>
+    <form action="">
+      <legend>
+        <h2>Faça seu login</h2>
+        <p>Entre com suas informações de cadastro.</p>
+      </legend>
+         <label for="login"><h4>Email</h4>
+
+         <input type="email" name="login" id="login" required placeholder="Digite seu e-mail"
+         autocomplete="off">
+        </label>
+    
+      <label for="senha"><h4>Senha</h4>
+        <input type="password" name="senha" id="senha" required placeholder="Digite sua senha">
+      </label>
+
+
+      <div class="checkbox">
+        <input type="checkbox" name="lembrar" id="lembrar">
+        Lembre-me
+        <div>
+          <a href="">Esqueci minha senha</a>
+        </div>
+      </div>
+      <label for="submit">
+        <input type="submit" value="Entrar">
+        <a href="#">Não tem uma conta? <strong>Registre-se</strong></a>
+      </label>
+    </form>
+  </div>
+  <div class="right-side"></div>
+</body>
+</html>
