@@ -82,6 +82,10 @@ input[type=checkbox] {
 }
 
 input[type=submit] {
+  cursor: pointer;
+}
+
+input[type=submit] {
   background-color: var(--primary-color);
   color: #181716;
   font-size: 20px;
