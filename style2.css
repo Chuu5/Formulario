@@ -47,21 +47,21 @@ a:hover {
   text-decoration: underline;
 }
 
-form {
+.formulario {
   display: flex;
   flex-direction: column;
   background-color: var(--form-background);
-  max-width: 572px;
+  max-width: 570px;
   align-items: center;
   width: 100%;
+  text-align: center;
 }
 
 label {
   display: flex;
   flex-direction: column;
-  max-width: 335px;
-  width: 100%;
   margin: 13px;
+  text-align: left;
 }
 
 input {
@@ -123,11 +123,6 @@ input[type=submit] {
   .right-side {
     display: none;
   }
- 
-  .left-side {
-    width: 100%;
-  }
-
 
   form legend {
     font-size: 20px;
@@ -141,7 +136,7 @@ input[type=submit] {
 @media (max-width: 450px) {
   
 
-  .left-side form {
+  .left-side .formulario {
     background-color: var(--background);
   }
 }
